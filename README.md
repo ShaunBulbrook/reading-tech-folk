@@ -1,11 +1,10 @@
-[https://readingtechfolk.org/](https://readingtechfolk.org/)
+# Reading Tech Folk
 
-This repository deploys automatically to **Cloudflare Pages**. A GitHub
-Actions workflow runs `cloudflare/wrangler-action` on every push to
-`main` and for all pull request events, creating preview deployments for
-PRs.
+This repository contains the source for the Reading Tech Folk website. The site lists upcoming events and explains what the community is about. Everything here is a static site, so you will find HTML, CSS, and images that power [readingtechfolk.org](https://readingtechfolk.org/).
+
+To view the site locally, simply open `index.html` in your browser.
 
 To enable deployments you must set the following repository secrets:
-
 - `CF_API_TOKEN` – API token with permission to deploy Pages projects.
-- `CF_ACCOUNT_ID` – the Cloudflare account ID that hosts the project.
+
+
