@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: "24.x"
       - name: Run HTMLHint
-        run: npx htmlhint index.html
+        run: npx htmlhint src/index.html
