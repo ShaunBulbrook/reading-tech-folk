@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     environment: prod
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v4
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: |
-            pages project list
+          command: pages deploy src project-name=reading-tech-folk
