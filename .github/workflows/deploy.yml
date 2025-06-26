@@ -20,4 +20,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages deploy src project-name=reading-tech-folk
+          command: pages deploy src --project-name=reading-tech-folk
