@@ -1,5 +1,4 @@
 name: Deploy
-
 on:
   push:
     branches:
@@ -9,10 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    name: Deploy
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - uses: cloudflare/wrangler-action@v3
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: pages deploy ./ --project-name=reading-tech-folk --branch=${{ github.ref_name }}
