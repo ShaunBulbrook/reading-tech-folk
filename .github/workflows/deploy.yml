@@ -16,3 +16,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           environment: "production"
+          command: |
+            pages project list
