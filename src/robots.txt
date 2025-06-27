@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://readingtechfolk.org/sitemap.xml
